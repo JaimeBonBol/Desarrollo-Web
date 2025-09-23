@@ -1,0 +1,127 @@
+body, html{
+  width: 99vw;
+  height: 98vh;
+  background: url(../images/fondo.png);
+  color: #D5DBDB;
+}
+
+.contenedor-principal{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "contenido1 contenido2 contenido3"
+        "footer footer footer";
+    grid-template-columns: 2fr 4fr 4fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    gap: 20px;
+}
+
+.header{
+    grid-area: header;
+    font-family: Georgia, serif;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.header>h1{
+    margin-left: 15%;
+    font-size: 40px;
+    color: #7adbdb;
+
+}
+
+.header>h2{
+    margin-left: 30px;
+    font-size: 20px;
+    color: #7adbdb;
+}
+
+.contenido1{
+    grid-area: contenido1;
+    border:1px solid #D5DBDB;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.contenido1 img{
+    height: 50%;
+    width: 100%;
+}
+.contenido1 ul{
+    text-align: left;
+    margin-top: 30px;
+}
+
+.contenido1 li{
+    list-style: none;
+    margin-top: 15px;
+}
+
+
+.contenido2{
+    grid-area: contenido2;
+    border:1px solid #D5DBDB;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.experiencia{
+    width: 80%;
+    height: 150px;
+    margin-top: 20px;
+    background-color: #d5dbdb3b;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.experiencia:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+    background-color: #528181;
+}
+
+.contenido3{
+    grid-area: contenido3;
+    border:1px solid #D5DBDB;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formacion{
+    width: 80%;
+    height: 150px;
+    margin-top: 20px;
+    background-color: #d5dbdb3b;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.formacion:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+    background-color: #528181;
+}
+
+.footer{
+    grid-area: footer;
+    font-family: Georgia, serif;
+    text-align: center;
+    justify-content: center;
+    color: #7adbdb;
+
+}

@@ -1,0 +1,56 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0s;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+.OPT{
+    background-color: #436e63;
+}
+
+.AaD{
+    background-color: #56B5F0;
+}
+
+.DIN{
+    background-color: #d1815c;
+}
+
+.PSP{
+    background-color: #66ED9B;
+}
+
+.IPE{
+    background-color: #4D7EF0;
+}
+
+.PRO{
+    background-color: #B5E9ED;
+}
+
+.SGE{
+    background-color: #B1A8EE;
+}
+
+.ING{
+    background-color: #e7f066;
+}
+
+.PMD{
+    background-color: #F0DDC5;
+}
