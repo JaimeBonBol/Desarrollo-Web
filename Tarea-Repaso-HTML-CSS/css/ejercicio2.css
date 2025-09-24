@@ -88,9 +88,8 @@ body, html{
 }
 
 .experiencia:hover{
-    transform: translateY(-5px);
-    transition: .5s;
     background-color: #528181;
+    transition: .5s;
 }
 
 .contenido3{
@@ -114,9 +113,8 @@ body, html{
 }
 
 .formacion:hover{
-    transform: translateY(-5px);
-    transition: .5s;
     background-color: #528181;
+    transition: .5s;
 }
 
 .footer{
