@@ -10,6 +10,6 @@ function dibujarTabla() {
     </table>  
     `;
 
-    const divTabla = document.getElementById("tabla").innerHTML=tabla;
+    const divTabla = document.getElementById("tabla").innerHTML = tabla;
     
 }

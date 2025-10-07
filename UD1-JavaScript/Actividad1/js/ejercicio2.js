@@ -18,5 +18,6 @@ function dibujarTabla() {
 
     // Añado estilo.
     divTabla.style.color = "blue";
-
+    divTabla.style.fontSize = "12px";
+    divTabla.style.border = "1px solid black";
 }
