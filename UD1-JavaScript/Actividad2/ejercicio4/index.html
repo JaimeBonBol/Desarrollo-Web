@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Actividad 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="contenido">
+        <div class="enunciado">
+            <p>Ejercicio 4 - Actividad 2: Crear una web que tenga cuatro divs y un cuadro de lista desplegable que tenga las siguientes opciones red, blue, green, lightgrey. Codificar una función que para el evento onchange del cuadro de lista cambie el color de fondo de los divs.</p>
+        </div>
+        
+        <div id="divRed">
+            <label for="opcionesColor">Elige un color:</label>
+            <select name="opcionesColor" id="opcionesColorRed" onchange="cambiarColor('divRed', 'opcionesColorRed')">
+                <option value="white"></option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="lightgrey">LightGrey</option>
+            </select>
+        </div>
+        <div id="divBlue">
+            <label for="opcionesColor">Elige un color:</label>
+            <select name="opcionesColor" id="opcionesColorBlue" onchange="cambiarColor('divBlue', 'opcionesColorBlue')">
+                <option value="white"></option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="lightgrey">LightGrey</option>
+            </select>
+        </div>
+        <div id="divGreen">
+            <label for="opcionesColor">Elige un color:</label>
+            <select name="opcionesColor" id="opcionesColorGreen" onchange="cambiarColor('divGreen', 'opcionesColorGreen')">
+                <option value="white"></option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="lightgrey">LightGrey</option>
+            </select>
+        </div>
+        <div id="divLightGrey">
+            <label for="opcionesColor">Elige un color:</label>
+            <select name="opcionesColor" id="opcionesColorLightGreen" onchange="cambiarColor('divLightGrey', 'opcionesColorLightGreen')">
+                <option value="white"></option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="lightgrey">LightGrey</option>
+            </select>
+        </div>
+
+    </div>
+</body>
+</html>

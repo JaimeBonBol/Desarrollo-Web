@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Actividad 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="contenido">
+        <div class="enunciado">
+            <p>Ejercicio 3 - Actividad 2: Modificar el ejercicio anterior y añadir un botón que sirva para poder borrar todos los contenidos de los cuadros de texto de golpe. Usad un bucle y la función getElementsByTagName().
+            </p>
+        </div>
+
+        <div class="inputs">
+            <input type="text" id="input1" onfocus="enfoque('input1')" onblur="desenfoque('input1')">
+            <input type="text" id="input2" onfocus="enfoque('input2')" onblur="desenfoque('input2')">
+            <input type="text" id="input3" onfocus="enfoque('input3')" onblur="desenfoque('input3')">
+            <button id="botonEliminarTextos" onclick="eliminarTextos()">Eliminar todos los textos</button>
+        </div>
+
+    </div>
+</body>
+</html>
