@@ -1,0 +1,24 @@
+.contenido {
+    display: flex;
+    flex-direction: column;    /* coloca elementos en columna */
+    align-items: center;       /* centra horizontalmente */
+    gap: 80px;                 /* espacio entre enunciado y tabla */
+    text-align: center;        /* centra el texto del enunciado */
+}
+
+.enunciado {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+
+#imagenes{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#imagenes img{
+    width: 100px;
+    height: 100px;
+}
