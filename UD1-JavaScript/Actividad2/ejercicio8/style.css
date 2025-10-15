@@ -1,0 +1,27 @@
+.contenido {
+    display: flex;
+    flex-direction: column;    /* coloca elementos en columna */
+    align-items: center;       /* centra horizontalmente */
+    gap: 80px;                 /* espacio entre enunciado y tabla */
+    text-align: center;        /* centra el texto del enunciado */
+}
+
+.enunciado {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario form button{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(65, 60, 54);
+    color: white;
+    padding: 10px;
+}
