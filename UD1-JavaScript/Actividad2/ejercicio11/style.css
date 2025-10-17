@@ -1,0 +1,26 @@
+.contenido {
+    display: flex;
+    flex-direction: column;    /* coloca elementos en columna */
+    align-items: center;       /* centra horizontalmente */
+    gap: 80px;                 /* espacio entre enunciado y tabla */
+    text-align: center;        /* centra el texto del enunciado */
+}
+
+.enunciado {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+
+.tabla{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tabla button{
+    border: none;
+    background-color: rgb(0, 140, 255);
+    padding: 10px;
+    border-radius: 5px;
+}

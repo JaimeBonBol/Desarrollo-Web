@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - Actividad 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="contenido">
+        <div class="enunciado">
+            <p>Ejercicio 12 - Actividad 2: Crear un documento html con 3 imágenes y mediante javascript controlar el evento onmouseover sobre cada imagen para que le ponga los bordes redondeados a la imagen sobre la cual estamos pasando.</p>
+        </div>
+    </div>
+
+    <div class="imagenes">
+        <img src="images/img1.jpg" id="img1" alt="" onmouseover="redondear(this)" onmouseleave="quitarBordes(this)">
+        <img src="images/img2.png" id="img2" alt="" onmouseover="redondear(this)" onmouseleave="quitarBordes(this)">
+        <img src="images/img3.jpg" id="img3" alt="" onmouseover="redondear(this)" onmouseleave="quitarBordes(this)">
+    </div>
+</body>
+</html>
