@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 3 - Ejercicio 6</title>
+    <title>Actividad 3 - Ejercicio 7</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="enunciado">
-            <p>Actividad 3 - Ejercicio 6: Implementar una web que haga las funciones de un cronómetro. Se añadirá un botón desde el que poder iniciar o reanudar el cronómetro, otro botón para parar el cronómetro y otro para resetear los valores y ponerlos a 0.</p>
+            <p>Actividad 3 - Ejercicio 7: Modificar el ejercicio anterior para que cada vez que se pare el cronómetro se vayan guardando en un div los tiempos de parada.</p>
         </div>
 
         <div class="contenido">
@@ -19,6 +19,14 @@
                 <button onclick="iniciarCrono()">Iniciar</button>
                 <button onclick="pararCrono()">Parar</button>
                 <button onclick="reiniciarCrono()">Reiniciar</button>
+            </div>
+
+            <div class="tiemposParada">
+                <h3>Tiempos de parada</h3>
+                <button onclick="limpiarParadas()">Limpiar Paradas</button>
+                <div class="paradas">
+                    
+                </div>
             </div>
         </div>
     </div>
