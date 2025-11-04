@@ -119,8 +119,6 @@ let arrayAlumnos = [alumno1, alumno2, alumno3, alumno4];
 
 let clase = new Clase("2ºDAM", "Aula B4", arrayAlumnos);
 
-const pClase = document.getElementById("pClase");
-
 // Mostrar la información de la clase cuando carge la página
 document.addEventListener("DOMContentLoaded", () => {
     const pClase = document.getElementById("pClase");

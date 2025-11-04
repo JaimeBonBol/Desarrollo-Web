@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4 - Ejercicio 6</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="enunciado">
+            <p>Actividad 4 - Ejercicio 6: Define un objeto constructor que sea un cliente, este cliente tiene un nombre y un saldo bancario (variables privadas), crea los métodos ingreso, retirada y consultar para añadir, retirar o consultar el estado de las cuentas.            </p>
+        </div>
+        <div class="contenido">
+            <div class="operaciones">
+                <input id="inputIngresar" type="number" placeholder="Cantidad a ingresar">
+                <button onclick="ingresar()">Ingresar</button>
+                <input id="inputRetirar" type="number" placeholder="Cantidad a retirar">
+                <button onclick="retirar()">Retirar</button>
+                <button onclick="consultarSaldo()">Consultar saldo</button>
+                <p id="salidaSaldo"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
