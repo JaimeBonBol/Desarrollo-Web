@@ -11,3 +11,9 @@
     color: blue;
     font-weight: bold;
 }
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

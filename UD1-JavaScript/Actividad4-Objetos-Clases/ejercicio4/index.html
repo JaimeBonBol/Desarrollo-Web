@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4 - Ejercicio 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="enunciado">
+            <p>Actividad 4 - Ejercicio 4: Añade al ejercicio anterior un método para buscar dentro del array de alumnos por un alumno en concreto y que muestre sus calificaciones.</p>
+        </div>
+        <div class="contenido">
+            <div class="alumnos">
+                <p id="pClase"></p>
+                <p id="pAlumnos"></p>
+                <button onclick="mostrarAlumnos()">Mostrar Alumnos de la clase</button>
+            </div>
+            <div class="alumnoBuscar">
+                <input id="inputNombre" type="text" placeholder="Nombre del alumno a buscar">
+                <button onclick="buscarAlumnoPorNombre()">Buscar alumno</button>
+                <p id="palumnoBuscado"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
