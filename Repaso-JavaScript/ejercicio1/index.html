@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repaso JS - Ej 1</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <div class="wrapper">
@@ -27,11 +27,14 @@
             <input id="inputOperador" type="text">
         </div> 
         <div class="resultado">
-            <button id="btnCalcular">Calcular</button>
+            <button id="btnCalcular" onclick="calcular()">Calcular</button>
             <p>Resultado</p>
             <p id="resultado"></p>
+            <p>Resto</p>
             <p id="resto"></p>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
