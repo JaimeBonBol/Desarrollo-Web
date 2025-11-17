@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso JS - Ej 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="enunciado">
+            <p>Crea un script que genere un numero aleatorio entre el 1 y el 50 y una entrada de datos para que el usuario intente adivinar que numero es.</p>
+        </div>
+
+        <div class="contenido">
+            <p>Número secreto</p>
+            <p id="numSecreto">***</p>
+            <p id="estadoIntento"></p>
+
+            <div class="intento">
+                <input id="inputJugador" type="number" placeholder="Adivina el número secreto" >
+                <button onclick="comprobarIntento()">Comprobar</button>
+            </div>
+
+            <button onclick="mostrarNumeroSecreto()">Me rindo, muestrame el número</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
