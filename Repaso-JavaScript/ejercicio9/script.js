@@ -69,7 +69,7 @@ class Compra {
     toString() {
         let texto = `<strong>Productos:</strong><br>`;
 
-        // Aquí usamos FOR…IN como querías
+        // Aquí usamos FOR…IN
         for (let producto in this.productos) {
             texto += `${producto}: ${this.productos[producto]} unidades<br>`;
         }
