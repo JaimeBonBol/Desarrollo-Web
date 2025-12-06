@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen JS - Ej5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="enunciado">
+            <p>Crea un script con varios cuadros de texto, cuando el ratón esta encima del cuadro
+el color de la letra y el tamaño del texto debe variar, cuando el ratón abandone el
+cuadro de texto vuelva al estado anterior, cuando selecciones el cuadro de texto el
+fondo tiene que cambiar de color y cuando no este seleccionado volver al original.
+Para manipular el tamaño de la fuente por DOM se utiliza fontSize en vez de fontsize. (1 punto)</p>
+        </div>
+        <div class="contenido">
+            <textarea onfocus="clickCuadro(this)" onblur="salidaClickCuadro(this)" onmouseover="cambiarRatonEncima(this)" onmouseout="salidaRatonEncima(this)"  id="" style="font-size: 14px;">HOLAAA</textarea>
+            <textarea onfocus="clickCuadro(this)" onblur="salidaClickCuadro(this)" onmouseover="cambiarRatonEncima(this)" onmouseout="salidaRatonEncima(this)" id="" style="font-size: 14px;">HELLOO</textarea>
+            <textarea onfocus="clickCuadro(this)" onblur="salidaClickCuadro(this)" onmouseover="cambiarRatonEncima(this)" onmouseout="salidaRatonEncima(this)" id="" style="font-size: 14px;">SALUT</textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

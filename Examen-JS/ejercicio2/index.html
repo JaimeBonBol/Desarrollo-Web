@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen JS - Ej2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="enunciado">
+            <p>Crea un script que compruebe que los datos de un formulario están escritos
+correctamente, los campos del formulario son: Nombre completo, número de
+teléfono y dirección. El nombre completo solo puede tener caracteres, el número de
+teléfono solamente admite dígitos, y la dirección puede tener caracteres alfanuméricos. Debes comprobar que los valores introducidos cumplen con el formato.
+Para extraer los elementos debes usar getElementByTagName. Si algún elemento no
+tuviera el formato adecuado debes borrar el campo y mostrar un mensaje de error.</p>
+        </div>
+        <div class="contenido">
+            <form >
+                <label >Nombre completo:</label>
+                <input id="nombreCompleto" type="text" />
+
+                <label >Número de teléfono:</label>
+                <input id="nombreCompleto" type="text" />
+
+                <label >Dirección:</label>
+                <input id="nombreCompleto" type="text" />
+
+            </form>
+                <button onclick="comprobarCampos()">Enviar</button>
+
+            <p id="salidaError"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

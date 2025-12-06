@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen JS - Ej1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="enunciado">
+            <p>Crea un script que a través de una entrada de datos te cambie de divisa (por ejemplo,
+                que cambie de euros a dólares). Tiene que tener al menos 3 monedas distintas y
+                tiene que poder realizar la conversión de cualquiera de ellas. (1 punto)
+                 Se debe crear un HTML para probar el ejercicio.
+                 Se debe de poder introducir una cantidad monetaria por el documento
+                HTML.
+                 Debe tener una salida de información (por la vista HTML o por consola, a
+                elección del alumno).
+                 El script debe permitir la conversión entre los diferentes tipos de divisa.
+            </p>
+        </div>
+        <div class="contenido">
+            <div class="elegirMoneda">
+                <input type="number" placeholder="Cantidad" id="cantidadCambiar">
+                <select name="selector moneda" id="selectorMoneda">
+                    <option value="EUR">EUROS</option>
+                    <option value="LIB">LIBRAS</option>
+                    <option value="USD">DÓLARES</option>
+                </select>
+            </div>
+            <div class="cambio">
+                <p>Cambio a:</p>
+                <select name="selector moneda" id="selectorCambio">
+                    <option value="EUR">EUROS</option>
+                    <option value="LIB">LIBRAS</option>
+                    <option value="USD">DÓLARES</option>
+                </select>
+            </div>
+            <div class="salidaTotal">
+                <button onclick="cambiar()">Cambiar</button>
+                <p id="salidaCambiada"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
