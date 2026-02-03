@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3 - Js II</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="enunciado">
+        <p>
+          Crea una función que reciba una cadena de texto, después separe los
+          elementos (palabras, numero...), los elementos tienen que estar
+          separados por espacios, despues crea una tabla con dichos elementos, y
+          dependiendo del tipo que sea dale un color o estilo propios (a
+          decisión del alumno).
+        </p>
+      </div>
+
+      <div class="contenido">
+        <div class="input">
+          <input
+            type="text"
+            id="inputCadena"
+            placeholder="Escribe una cadena de texto separando los elementos con espacios"
+          />
+          <button id="btnGenerar" onclick="generarTabla()">Crear tabla</button>
+        </div>
+
+        <div id="divTabla">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

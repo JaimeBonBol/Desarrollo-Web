@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;    /* coloca elementos en columna */
+    align-items: center;       /* centra horizontalmente */
+    gap: 40px;                 /* espacio entre enunciado y tabla */
+    text-align: center;        /* centra el texto del enunciado */
+}
+
+.enunciado {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+
+/* Hacemos que los inputs se pongan uno debajo de otro */
+input, textarea, button {
+    display: block;  /* Comportamiento de bloque */
+    width: 300px;    /* Ancho fijo sencillo */
+    margin-bottom: 10px; /* Espacio entre elementos */
+    padding: 5px;
+}
+
+/* --- ESTILO PARA EL OBJETO CREADO --- */
+
+.ficha {
+    border: 1px solid black; /* Borde simple */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 10px;
+    width: 300px;
+}
+
+/* Botón de borrar rojo simple */
+.btn-borrar {
+    background-color: red;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}

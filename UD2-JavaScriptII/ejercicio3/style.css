@@ -1,0 +1,43 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;    /* coloca elementos en columna */
+    align-items: center;       /* centra horizontalmente */
+    gap: 40px;                 /* espacio entre enunciado y tabla */
+    text-align: center;        /* centra el texto del enunciado */
+}
+
+.enunciado {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+
+.inputCadena { 
+    width: 500px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Esto añade un pequeño espacio entre el input y el botón */
+
+    button {
+        width: 150px;
+        margin: auto;
+    }
+}
+
+/* Estilos para la tabla */
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 300px; /* Para que no sea gigante */
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}

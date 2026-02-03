@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2 - Js II</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="enunciado">
+        <p>
+          Crea un objeto tenga los siguientes campos: titulo, cuerpo y autor,
+          después crea un formulario para rellenar los diferentes campos del
+          objeto, después crea una función para crear el objeto con los datos
+          introducidos en el formulario e incrústalo en el código html usando
+          DOM, añade la función de borrar el objeto, cuando añadas un nuevo
+          objeto no borres el anterior de la vista HTML.
+        </p>
+      </div>
+      <div class="contenido">
+        <div class="formulario-container">
+          <h2>Crear Nuevo Artículo</h2>
+          <form id="formObjeto">
+            <div>
+              <label for="inputTitulo">Título:</label>
+              <input
+                type="text"
+                id="inputTitulo"
+                placeholder="Introduce el título"
+              />
+            </div>
+
+            <div>
+              <label for="inputCuerpo">Cuerpo:</label>
+              <textarea
+                id="inputCuerpo"
+                rows="4"
+                placeholder="Escribe el contenido aquí..."
+              ></textarea>
+            </div>
+
+            <div>
+              <label for="inputAutor">Autor:</label>
+              <input
+                type="text"
+                id="inputAutor"
+                placeholder="Nombre del autor"
+              />
+            </div>
+
+            <button type="button" id="btnCrear" onclick="crearArticulo()">
+              Crear Artículo
+            </button>
+          </form>
+        </div>
+
+        <hr />
+
+        <h3>Lista de Artículos:</h3>
+        <div id="listaArticulos"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

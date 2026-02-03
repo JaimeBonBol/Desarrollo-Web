@@ -18,7 +18,11 @@ function anyadirTarea() {
 
     // Crear un nuevo elemento de lista (li)
     let taskItem = document.createElement('li');
-    taskItem.textContent = textoTarea;
+
+    // crear un span para el texto
+    let taskSpan = document.createElement('span');
+    taskItem.appendChild(taskSpan); 
+    taskSpan.textContent = textoTarea;
 
     // Crear botón para eliminar la tarea
     let deleteButton = document.createElement('button');
@@ -32,8 +36,24 @@ function anyadirTarea() {
     });
 
     editButton.addEventListener('click', () => {
-      taskItem.contentEditable = true;
-      editButton.textContent = 'Guardar';
+      // Comprobamos el estado actual del botón
+      if (editButton.textContent === 'Editar') {
+          // MODO EDITAR
+          // Hacer editable el span solo para el texto
+          taskSpan.contentEditable = true;
+          taskSpan.focus();
+          editButton.textContent = 'Guardar';
+          
+          taskSpan.style.borderBottom = "1px solid black"; 
+          
+      } else {
+          // MODO GUARDAR
+          taskSpan.contentEditable = false;
+          editButton.textContent = 'Editar';
+          
+          taskSpan.style.borderBottom = "none";
+          
+      }
     })
 
 
