@@ -8,8 +8,8 @@ function iniciarProceso() {
     // Crear la promesa
     const promesa = new Promise(function(exito, fracaso){
 
-        // El código dentro del constructor de la promesa se ejecuta INMEDIATAMENTE
-        // al crearla. Por eso este mensaje sale justo después del paso 1.
+        // El código dentro del constructor de la promesa se ejecuta inmediatamente
+        // al crearla.
         h2.innerHTML += "<br>Estoy dentro de la promesa";
 
         setTimeout(function () {
