@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  flex-direction: column; /* coloca elementos en columna */
+  align-items: center; /* centra horizontalmente */
+  gap: 40px; /* espacio entre enunciado y tabla */
+  text-align: center; /* centra el texto del enunciado */
+}
+
+.enunciado {
+  font-size: 18px;
+  color: blue;
+  font-weight: bold;
+}
+
+/* Un poco de estilo básico para la tabla */
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin:50px auto ;
+}
+
+th,td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
