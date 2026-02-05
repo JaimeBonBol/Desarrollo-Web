@@ -16,7 +16,7 @@ function iniciarProceso() {
             // Avisamos al .then de que hemos terminado y le pasamos el nuevo mensaje
             let mensaje = "Salí de la promesa";
             exito(mensaje);
-          }, 3000);
+        }, 3000);
 
     });
 
