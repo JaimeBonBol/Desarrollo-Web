@@ -1,0 +1,39 @@
+/* ESTILOS BASE (Por defecto / Tema Claro) */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* TEMA OSCURO */
+body.tema-oscuro {
+    background-color: #222;
+    color: #fff;
+}
+
+body.tema-oscuro button {
+    background-color: #555;
+    color: #fff;
+}
+
+/* TEMA AZUL (Retro) */
+body.tema-azul {
+    background-color: #003366;
+    color: #ffd700; /* Letras doradas */
+}
+
+body.tema-azul button {
+    background-color: #ffd700;
+    color: #003366;
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejericico 1 - Actividad 6 JavaScriptII</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4>Crea una pagina que tenga varios estilos, y que con algún elementos puedas cambiar dichos estilos, el tema o estilo se debe guardar en memoria local y cuando se inicie la pagina tiene que leer dicha información y mostrar la pagina con la configuración seleccionada.</h4>
+
+    <h1>Cambio de Tema con LocalStorage</h1>
+    <h4>Selecciona un estilo. Si recargas la página, se mantendrá.</h4>
+
+    <button onclick="cambiarTema('')">Original (Claro)</button>
+    <button onclick="cambiarTema('tema-oscuro')">Modo Oscuro</button>
+    <button onclick="cambiarTema('tema-azul')">Modo Azul</button>
+
+    
+    <div id="contenido">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Este texto cambiará de color según el tema elegido.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
