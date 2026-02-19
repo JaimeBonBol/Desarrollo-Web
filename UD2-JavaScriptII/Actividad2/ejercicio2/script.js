@@ -17,7 +17,7 @@ async function cargarFichero() {
         let anio = CDs[i].getElementsByTagName("YEAR")[0].textContent;
         
         // 4. Filtro
-        if (parseInt(anio) > 1990) {
+        if (parseInt(anio) >= 1990) {
             let titulo = CDs[i].getElementsByTagName("TITLE")[0].textContent;
             let artista = CDs[i].getElementsByTagName("ARTIST")[0].textContent;
 
