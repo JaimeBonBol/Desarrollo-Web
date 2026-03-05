@@ -91,3 +91,35 @@ function mostrarCds() {
         divSalida.appendChild(divCd);
     });
 }
+
+function insertarCD(){
+    // 1. Obtenemos los valores de los inputs
+    const tituloForm = document.getElementById("inputTitulo").value;
+    const artistaForm = document.getElementById("inputArtista").value;
+    const companyForm = document.getElementById("inputCompany").value;
+    const precioForm = document.getElementById("inputPrecio").value;
+    const yearForm = document.getElementById("inputYear").value;
+
+    // 2. Creamos el objeto asegurando que la nacionalidad sea UK, tal como pide el enunciado [cite: 7]
+    let nuevoCd = {
+        titulo: tituloForm,
+        artista: artistaForm,
+        nacionalidad: "UK",
+        compania: companyForm,
+        precio: precioForm,
+        anio: yearForm
+    }
+
+    // 3. Añadimos el nuevo CD al array
+    listaCds.push(nuevoCd);
+
+    // 4. Limpiamos los inputs accediendo a su propiedad 'value'
+    document.getElementById("inputTitulo").value = "";
+    document.getElementById("inputArtista").value = "";
+    document.getElementById("inputCompany").value = "";
+    document.getElementById("inputPrecio").value = "";
+    document.getElementById("inputYear").value = "";
+
+    // 5. ¡Súper importante! Volvemos a pintar la lista de CDs en pantalla
+    mostrarCds();
+}
