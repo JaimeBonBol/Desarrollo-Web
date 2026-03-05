@@ -12,7 +12,10 @@ async function cargarFichero() {
     const Cds = datos.getElementsByTagName("CD");
 
     // Vaciar la lista de Cds
-    listaCds = [];
+    // listaCds = [];
+    // En lugar de listaCds = []; hacemos esto:
+    // Filtramos la lista para quedarnos SOLO con los introducidos a mano
+    listaCds = listaCds.filter(cd => cd.esManual === true);
 
     // Por cada Cd, creo un objeto literal y lo guardo en la lista
     for (let i = 0; i < Cds.length; i++) {
@@ -107,7 +110,8 @@ function insertarCD(){
         nacionalidad: "UK",
         compania: companyForm,
         precio: precioForm,
-        anio: yearForm
+        anio: yearForm,
+        esManual: true
     }
 
     // 3. Añadimos el nuevo CD al array
