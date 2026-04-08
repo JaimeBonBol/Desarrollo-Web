@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 examen JS II</title>
+</head>
+<body>
+    <label for="moviles">Filtrar marcas por lugar de origen</label>
+    <select name="moviles" id="lugarOrigen" onchange="filtrarPais()">
+        <option value="Todos">Todos</option>
+        <option value="Corea del Sur">Corea del Sur</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+        <option value="China">China</option>
+        <option value="Japón">Japón</option>
+        <option value="Finlandia">Finlandia</option>
+    </select>
+
+    <br>
+    <br>
+
+    <div id="salida"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

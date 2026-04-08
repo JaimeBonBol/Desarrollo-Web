@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 JS II</title>
+</head>
+<body>
+    <button onclick="cargarFichero()">Cargar fichero</button>
+
+    <label for="relojes">Filtrar marcas por lugar de origen</label>
+    <select name="relojes" id="marca" onchange="filtrarMarcas()">
+        <option value="Todos">Todos</option>
+        <option value="Rolex">Rolex</option>
+        <option value="Casio">Casio</option>
+        <option value="Seiko">Seiko</option>
+    </select>
+
+    <button onclick="guardarMemoria()">Guardar en memoria local</button>
+    <button onclick="borrarMemoria()">Borrar memoria local</button>
+
+    <br>
+    <br>
+    <div id="salida"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
