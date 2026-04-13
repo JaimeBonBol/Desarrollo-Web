@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3 - PHP</title>
     </head>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
 <body>
     <h3>3. Crea una página que imprima desde un módulo PHP una tabla, cuyo contenido sea la tabla de multiplicar de un número, tiene que tener 3 columnas y 10 filas (del 1 al 10).</h3>
     

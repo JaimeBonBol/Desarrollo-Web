@@ -36,13 +36,13 @@
             return $cadenaDevuelta;
         }
 
-        // 2. Definimos una frase con muchos espacios para probar
+        // Definimos una frase con muchos espacios para probar
         $textoOriginal = "H o l a   M u n d o ,   e s t o   e s  u naaa p ru eba  P H P !";
 
-        // 3. Llamamos a la función y guardamos el resultado
+        // Llamamos a la función y guardamos el resultado
         $textoProcesado = quitarEspaciosManual($textoOriginal);
 
-        // 4. Imprimimos los resultados para comparar
+        // Imprimimos los resultados para comparar
         echo "<p><strong>Texto original:</strong> '$textoOriginal'</p>";
         echo "<p><strong>Texto sin espacios:</strong> '$textoProcesado'</p>";
     ?>
