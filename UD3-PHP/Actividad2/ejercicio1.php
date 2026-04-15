@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1 - PHP</title>
+    <title>Ejercicio 1 Actividad 2 - PHP</title>
 </head>
 <body>
     <h3>1. Crea un formulario que lea una cadena de caracteres, después crea una función para comprobar si la cadena es un palíndromo (se lee igual en ambos sentidos, por ejemplo, Ana o Acaso hubo búhos aca) o no.</h3>
@@ -17,7 +17,7 @@
         if (isset($_POST["cadena"]) == true && $_POST["cadena"] != "") {
             $cadena = $_POST["cadena"];
             if (esPalindromo($cadena)) {
-                echo "La cadena $cadena SI es un palíndromo <br>";
+                echo "La cadena $cadena es un palíndromo <br>";
             }else {
                 echo "La cadena $cadena NO es un palíndromo <br>";
             }
